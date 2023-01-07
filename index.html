@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mythologie Angledroitienne</title>
+    <style>
+      /* Modifiez le CSS ci-dessous pour améliorer l'apparence de votre page */
+      /* Modifiez le CSS ci-dessous pour créer un thème aux tons vert et turquoise */
+      body {
+        font-family: 'Helvetica Neue', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #e8f5e9;
+        color: #333;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 2.5em;
+        font-weight: normal;
+        color: #00695c;
+        margin: 1em 0;
+      }
+
+      .tabs {
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid #ccc;
+        overflow: auto;
+        background-color: #c8e6c9;
+      }
+
+      .tab-button {
+        flex: 1;
+        border: none;
+        background-color: #c8e6c9;
+        color: #333;
+        padding: 0.5em 1em;
+        font-size: 0.9em;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .tab-button:hover {
+        background-color: #aed581;
+      }
+
+      .tab-button.active {
+        background-color: #e8f5e9;
+        font-weight: bold;
+        color: #00695c;
+      }
+
+      .tab-content {
+        display: none;
+        padding: 1em;
+        background-color: #e8f5e9;
+      }
+
+      .tab-content.active {
+        display: block;
+      }
+
+      h2 {
+        font-size: 1.5em;
+        margin: 0.5em 0;
+        color: #00695c;
+      }
+
+      h3 {
+        font-size: 1.2em;
+        font-weight: normal;
+        color: #00897b;
+        margin: 0.5em 0;
+      }
+
+      p {
+        font-size: 0.9em;
+        line-height: 1.5;
+        margin: 0.5em 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Mythologie Angledroitienne</h1>
+    <div class="tabs">
+      <button class="tab-button active" id="dieux-arts-button" onclick="changeTab('dieux-arts')">Dieux des Arts</button>
+      <button class="tab-button" id="dieux-enfer-button" onclick="changeTab('dieux-enfer')">Dieux des Enfers</button>
+      <button class="tab-button" id="dieux-patrimoine-button" onclick="changeTab('dieux-patrimoine')">Dieux du Patrimoine</button>
+      <button class="tab-button" id="dieux-moderation-button" onclick="changeTab('dieux-moderation')">Dieux de la Sainte Modération</button>
+      <button class="tab-button" id="dieux-hornyness-button" onclick="changeTab('dieux-hornyness')">Dieux de la Hornyness</button>
+      <button class="tab-button" id="entites-button" onclick="changeTab('entites')">Entités mystérieuses</button>
+    </div>
+    <div id="dieux-arts" class="tab-content active">
+      <h2>Dieux des Arts</h2>
+        <h3>Vincent, dieu de la musique</h3>
+        <p>Vincent est un dieu passionné et créatif, connu pour sa fascination pour la musique et sa détermination à devenir le meilleur musicien possible. On raconte qu'il passe de nombreuses heures à étudier la musique et à s'entraîner à de nouvelles techniques, et qu'il est un expert en matière de musique. Vincent est également très apprécié par ses amis pour sa bienveillance et sa générosité.  Malgré sa réputation de dieu de la musique, Vincent est en réalité très polyvalent et aime s'impliquer dans de nombreuses activités. Il est très proche de ses amis, Winona, déesse de la calligraphie, et Alphafloyd, démon de la comédie, avec qui il aime passer du temps à discuter de musique et de comédie.</p>
+        
+        <h3>Winona, déesse de la calligraphie</h3>
+        <p>Winona est une déesse créative et passionnée, connue pour sa fascination pour la calligraphie et sa détermination à devenir la meilleure calligraphe possible. On dit qu'elle possède une plume magique capable de créer n'importe quel type de caractères, et qu'elle utilise ses pouvoirs pour écrire de beaux poèmes et des lettres d'amour pour ses amis. Winona est également une déesse très généreuse et à l'écoute, qui aime aider les autres et leur apporter du réconfort. Elle est très proche de ses amis, Vincent, dieu de la musique, et Alphafloyd, démon de la comédie, avec qui elle aime passer du temps à discuter de calligraphie et de comédie.</p>
+        
+        <h3>Alphafloyd, démon de la comédie et du doublage</h3>
+        <p>Alphafloyd est un dieu drôle et talentueux, connu pour sa fascination pour la comédie et sa détermination à en apprendre toujours plus sur les différentes techniques de l'humour. On dit qu'il possède un micro magique qui lui permet de faire rire n'importe qui et de rendre n'importe quelle situation plus légère, et qu'il aime utiliser ses pouvoirs pour amuser ses amis et sa famille. Alphafloyd est également un démon du doublage très doué, capable de donner de la voix à de nombreux personnages et de faire des imitations impressionnantes. Il est très proche de ses amis, Vincent, dieu de la musique, et Winona, déesse de la calligraphie, avec qui il aime passer du temps à discuter de comédie et de doublage.</p>
+
+        <h3>Benzine, dieu du speedrun</h3>
+        <p>Benzine est un dieu rapide et agile, connu pour sa fascination pour le speedrun et sa détermination à battre des records. On dit qu'il possède une paire de baskets magiques qui lui permettent de courir plus vite et de sauter plus haut, et qu'il aime utiliser ses pouvoirs pour défier ses amis et ses rivaux à des courses effrénées. Benzine est également un dieu très stratégique et astucieux, qui aime trouver des raccourcis et des astuces pour améliorer ses performances. Il est très proche de ses amis, Colcol, dieu des vélos, et Tricia, déesse de la sainte SF, avec qui il aime passer du temps à discuter de speedrun et de jeux vidéo.</p>
+
+        <h3>Tricia, déesse de la SF</h3>
+        <p>Tricia est une déesse passionnée et avide de connaissances, connue pour sa fascination pour la science-fiction et sa détermination à en apprendre toujours plus sur les univers imaginaires et les technologies futuristes. On dit qu'elle possède une bibliothèque magique remplie de livres et de films de SF, et qu'elle passe de nombreuses heures à étudier et à réfléchir sur les différentes possibilités qu'offrent ces univers. Tricia est également une déesse très bienveillante et à l'écoute, qui aime aider les autres à comprendre et à apprécier la SF. Elle est très proche de ses amis, Benzine, dieu du speedrun, et Colcol, dieu des vélos, avec qui elle aime passer du temps à discuter de SF et de speedruns.</p>
+        
+        <h3>Colcol, dieu des vélos</h3>
+        <p>Colcol est un dieu passionné et sportif, connu pour sa fascination pour les vélos et sa détermination à devenir le meilleur cycliste possible. On dit qu'il possède une bicyclette magique qui lui permet de parcourir de grandes distances en un clin d'œil, et qu'il aime participer à de nombreuses courses de vélo. Colcol est également un dieu très bienveillant et à l'écoute, qui aime aider les autres à s'entraîner et à progresser dans leur pratique du vélo. Il est très proche de ses amis, Benzine, dieu du speedrun, et Tricia, déesse de la SF, avec qui il aime passer du temps à discuter de vélo et de SF.</p>
+      </div>
+
+      <div id="dieux-enfer" class="tab-content">
+        <h2>Dieux des Enfers</h2>
+          <h3>Pyratt, dieu des objets flottants</h3>
+          <p>Pyratt est un dieu étrange et puissant, connu pour sa fascination pour les objets flottants et sa capacité à les contrôler à volonté. On dit qu'il possède une baguette magique qui lui permet de faire flotter n'importe quel objet et de le déplacer à sa guise, et qu'il aime utiliser ses pouvoirs pour jouer des tours et épater ses amis. Pyratt est également un dieu très curieux et intelligent, qui aime expérimenter de nouvelles choses et découvrir de nouveaux secrets. Il est très proche de ses amis, Hiri, esprit du chaos, créatrice des mind maps, maîtresse des émeutes et st patron des cocktails Molotov, et Gavé, dieu de l'argent, avec qui il aime passer du temps à discuter d'objets flottants et de magie.</p>
+
+          <h3>Hiri, esprit du chaos, créatrice des mind maps, maîtresse des émeutes et saint patron des cocktails Molotov</h3>
+          <p>Hiri est un esprit imprévisible et impénétrable, connu pour sa fascination pour le chaos et sa détermination à semer le trouble et la confusion partout où elle passe. On dit qu'elle possède une baguette magique qui lui permet de créer des perturbations et des catastrophes à volonté, et qu'elle aime utiliser ses pouvoirs pour mettre à l'épreuve les limites et la patience des autres. Hiri est également la créatrice de la méthode de cartographie mentale, un outil très populaire pour organiser ses idées et ses pensées de manière cohérente et claire. Elle est également la maîtresse des émeutes, un groupe de rebelles qui luttent contre l'oppression et l'injustice, et le saint patron des cocktails Molotov, un mélange explosif et dangereux qui a le pouvoir de dévaster tout sur son passage. Elle est très proche de ses amis, Pyratt, dieu des objets flottants, et Gavé, dieu de l'argent, avec qui elle aime passer du temps à discuter de stratégie et de planification.</p>
+
+          <h3>Gavé, dieu de l'argent</h3>
+          <p>Gavé est un dieu avisé et opportuniste, connu pour sa fascination pour l'argent et sa détermination à en accumuler le plus possible. On dit qu'il possède une bourse magique qui lui permet de faire croître sa fortune à volonté, et qu'il aime utiliser ses pouvoirs pour investir dans de nouvelles entreprises et des projets à haut rendement. Gavé est également un dieu très malin et rusé, qui aime trouver des moyens de tirer profit de chaque situation et de chaque opportunité. Il est très proche de ses amis, Hiri, esprit du chaos, créatrice des mind maps, maîtresse des émeutes et saint patron des cocktails Molotov, et Démoboros, dieu des choses cassées et dieu de l'astrologie, avec qui il aime passer du temps à discuter d'investissements et de finances.</p>
+
+          <h3>Démoboros, dieu des choses cassées et dieu de l'astrologie</h3>
+          <p>Démoboros est un dieu curieux et déterminé, connu pour sa fascination pour les choses cassées et sa détermination à les réparer et à les rendre de nouveau utilisables. On dit qu'il possède une boîte à outils magique qui lui permet de réparer n'importe quoi, et qu'il aime utiliser ses pouvoirs pour aider les autres à résoudre leurs problèmes et à réparer leurs objets brisés. Démoboros est également un dieu très intéressé par l'astrologie, et passe de nombreuses heures à étudier les étoiles et les planètes pour en apprendre plus sur leur influence sur le monde et sur les vies des gens. Il est très proche de ses amis, Gavé, dieu de l'argent, et Sphénodon, dieu de l'intelligence mécanique et protecteur du bon coin, avec qui il aime passer du temps à discuter de mécanique et d'astrologie.</p>
+
+          <h3>Sphénodon, dieu de l'intelligence mécanique et protecteur du bon coin</h3>
+          <p>Sphénodon est un dieu intelligent et ingénieux, connu pour sa fascination pour les mécanismes et sa détermination à comprendre comment ils fonctionnent. On dit qu'il possède une clé magique qui lui permet de démonter et de remonter n'importe quelle machine, et qu'il aime utiliser ses pouvoirs pour résoudre des énigmes et des problèmes complexes. Sphénodon est également le protecteur du bon coin, un site de petites annonces très populaire où les gens peuvent acheter et vendre toutes sortes de choses. Il aime veiller à ce que les transactions se déroulent de manière juste et équitable, et fait en sorte de protéger les utilisateurs contre les escroqueries et les fraudes. Il est très proche de ses amis, Démoboros, dieu des choses cassées et dieu de l'astrologie, et Gavé, dieu de l'argent, avec qui il aime passer du temps à discuter de mécanique et de finances.</p>
+
+          <h3>Setnan, dieu du sel</h3>
+          <p>Setnan est un dieu puissant et craint, connu pour sa fascination pour le sel et sa capacité à utiliser ses pouvoirs pour contrôler les éléments. On dit qu'il possède un sac magique rempli de sel, qu'il utilise pour faire fondre la glace, assécher les marais et créer des tempêtes de sable. Setnan est également un dieu très rusé et fourbe, qui aime semer la confusion et le chaos parmi ses ennemis. Malgré sa réputation de dieu du sel, Setnan est en réalité très polyvalent et aime s'impliquer dans de nombreuses activités. Il est très proche de ses amis, Solstice, dieu des chats, et Panoptie, dieu des sciences humaines et sociales, avec qui il aime passer du temps à discuter de sel et de sciences humaines.</p>
+          
+          <h3>Solstice, dieu des chats</h3>
+          <p>Solstice est un dieu doux et affectueux, connu pour sa fascination pour les chats et sa détermination à en prendre soin. On dit qu'il possède une maison magique remplie de chats de toutes les couleurs et de toutes les tailles, et qu'il passe de nombreuses heures à jouer et à s'occuper d'eux. Solstice est également un dieu très bienveillant et à l'écoute, qui aime aider les autres à comprendre et à apprécier les chats. Il est très proche de ses amis, Setnan, dieu du sel, et Panoptie, dieu des sciences humaines et sociales, avec qui il aime passer du temps à discuter de chats et de sciences humaines.</p>
+          
+          <h3>Panoptie, dieu des sciences humaines et sociales, police anti-fun et assistant horny patrol</h3>
+          <p>Panoptie est un dieu sérieux et responsable, connu pour sa fascination pour les sciences humaines et sociales et sa détermination à en apprendre toujours plus sur les différentes disciplines qui les composent. On dit qu'il possède une plume magique qui lui permet de prendre des notes rapides et précises et de mémoriser facilement les informations qu'il a apprises, et qu'il aime utiliser ses pouvoirs pour aider ses amis à comprendre les concepts complexes. Panoptie est également un dieu très juste et équitable, qui aime veiller à ce que tout le monde respecte les règles et les lois, et qui sert de police anti-fun et de assistant horny patrol pour aider à maintenir l'ordre et l'harmonie. Il est très proche de ses amis, Démoboros, dieu des choses cassées et dieu de l'astrologie, et Sphénodon, dieu de l'intelligence mécanique et protecteur du bon coin, avec qui il aime passer du temps à discuter de sciences humaines et sociales et à maintenir l'ordre.</p>
+    </div>
+    <div id="dieux-moderation" class="tab-content">
+        <h2>Dieux de la Sainte Modération</h2>
+          <h3>Babageno, dieu des opéras et des arts vivants, protecteur des saintes relations et dieu de la horny patrol</h3>
+          <p>Babageno est un dieu passionné et créatif, connu pour sa fascination pour les opéras et les arts vivants et sa détermination à devenir le meilleur artiste possible. On dit qu'il possède une voix magique capable de captiver son public, et qu'il aime participer à de nombreuses représentations d'opéras et de comédies musicales. Babageno est également un dieu très bienveillant et à l'écoute, qui aime aider les autres à comprendre et à apprécier les arts vivants. En tant que protecteur des saintes relations, Babageno s'assure que tout le monde a un bon moment et que les relations entre les différents dieux et créatures sont saines et respectueuses. En tant que dieu de la horny patrol, Babageno s'assure que tout le monde respecte les limites de chacun et que la horniness reste sous contrôle.</p>
+          
+          <h3>JMarque, dieu des pieds et maître des chevaliers du Feur</h3>
+          <p>JMarque est un dieu puissant et respecté, connu pour sa fascination pour les pieds et sa détermination à en apprendre toujours plus sur les différentes techniques de soins et de massage. On dit qu'il possède une pommade magique qui lui permet de soulager la douleur et la fatigue des pieds et de les rendre plus beaux et plus en forme, et qu'il aime utiliser ses pouvoirs pour aider ses amis et sa famille à prendre soin de leurs pieds. JMarque est également le maître des chevaliers du Feur, une organisation de guerriers loyaux et courageux qui sont dévoués à protéger le monde contre les forces du mal. Il est très proche de ses amis, Babageno, dieu des opéras et des arts vivants, protecteur des saintes relations et dieu de la horny patrol, et Chroma, dieu de l'histoire, avec qui il aime passer du temps à discuter de pieds et de stratégies de combat.</p>
+
+          <h3>Chroma, dieu de l'histoire</h3>
+          <p>Chroma est un dieu passionné et curieux, connu pour sa fascination pour l'histoire et sa détermination à en apprendre toujours plus sur le passé. On dit qu'il possède une baguette magique qui lui permet de remonter le temps et de voyager dans le passé, et qu'il aime utiliser ses pouvoirs pour découvrir de nouvelles histoires et partager ses connaissances avec les autres. Chroma est également un dieu très juste et équitable, qui aime veiller à ce que tout le monde ait accès à la même information et à la même compréhension de l'histoire. Il est très proche de ses amis, JMarque, dieu des pieds et maître des chevaliers du Feur, et Pleutre, dieu du dessin, dieu pimenté et responsable de la brigade anti-dépréciation, avec qui il aime passer du temps à discuter d'histoire et de culture.</p>
+
+          <h3>Pleutre, dieu du dessin, dieu pimenté et responsable de la brigade anti-dépréciation</h3>
+          <p>Pleutre est un dieu créatif et original, connu pour sa fascination pour le dessin et sa détermination à exprimer sa créativité de différentes manières. On dit qu'il possède un crayon magique qui lui permet de créer des œuvres d'art épiques et de réaliser ses rêves les plus fous, et qu'il aime utiliser ses pouvoirs pour inspirer les autres et leur montrer de nouvelles façons de voir le monde. Pleutre est également un dieu très pimenté et audacieux, qui aime prendre des risques et sortir des sentiers battus. Il est également responsable de la brigade anti-dépréciation, une organisation qui lutte contre l'intolérance et la discrimination et qui vise à promouvoir l'acceptation et le respect de tous. Il est très proche de ses amis, Chroma, dieu de l'histoire, et VHS, dieu des films et dieu de FF14, avec qui il aime passer du temps à discuter de dessin et de créativité.</p>
+
+          <h3>VHS, dieu des films et dieu de FF14</h3>
+          <p>VHS est un dieu passionné et créatif, connu pour sa fascination pour les films et sa détermination à en apprendre toujours plus sur leur création. On dit qu'il possède une collection de films magiques qui lui permettent de voyager à travers le temps et l'espace, et qu'il passe de nombreuses heures à regarder et à analyser différents films de tous les genres. VHS est également un dieu très bienveillant et à l'écoute, qui aime aider les autres à comprendre et à apprécier les films. En tant que dieu de FF14, VHS est également très impliqué dans le monde du jeu en ligne, et aime passer du temps à jouer et à discuter avec ses amis de FF14. Il est très proche de ses amis, PastèqueHachée, dieu de la pâtisserie, et Takamari, dieu d'Isaac et messager d'Andorre, avec qui il aime passer du temps à discuter de films et de jeux.</p>
+          
+          <h3>PastèqueHachée, dieu de la pâtisserie</h3>
+          <p>PastèqueHachée est un dieu doux et affectueux, connu pour sa fascination pour la pâtisserie et sa détermination à en apprendre toujours plus sur les différentes techniques de pâtisserie. On dit qu'il possède une cuisine magique remplie d'ingrédients et d'outils de pâtisserie, et qu'il passe de nombreuses heures à expérimenter de nouvelles recettes de gâteaux, de biscuits et de tartes. PastèqueHachée est également un dieu très bienveillant et à l'écoute, qui aime aider les autres à comprendre et à apprécier la pâtisserie. Il est très proche de ses amis, VHS, dieu des films et dieu de FF14, et Takamari, dieu d'Isaac et messager d'Andorre, avec qui il aime passer du temps à discuter de pâtisserie et de jeux.</p>
+          
+          <h3>Takamari, dieu d'Isaac et messager d'Andorre</h3>
+          <p>Takamari est un dieu agréable et amical, connu pour sa fascination pour le jeu vidéo Isaac et sa détermination à en apprendre toujours plus sur les différentes stratégies et les secrets cachés. On dit qu'il possède un joystick magique qui lui permet de contrôler facilement n'importe quel personnage et de découvrir de nouvelles façons de jouer, et qu'il aime utiliser ses pouvoirs pour aider ses amis et sa famille à progresser dans le jeu. Takamari est également le messager d'Andorre, un pays lointain et mystérieux dont il est le seul à connaître les secrets et les coutumes. Il est très proche de ses amis, Ninouey, déesse de l'ombre, et Tesserack, dieu Alsacz, avec qui il aime passer du temps à discuter de Isaac et de l'histoire d'Andorre.</p>
+
+          <h3>Ninouey, déesse de l'ombre</h3>
+          <p>Ninouey est une déesse mystérieuse et puissante, connue pour sa fascination pour l'ombre et sa capacité à utiliser ses pouvoirs pour disparaître et réapparaître à volonté. On dit qu'elle possède une cape magique qui lui permet de se fondre dans l'ombre et de se déplacer à sa guise, et qu'elle aime utiliser ses pouvoirs pour jouer des tours et effrayer les autres. Ninouey est également une déesse très rusée et intelligente, qui aime réfléchir à de nouvelles stratégies et tactiques pour aider ses amis et vaincre ses ennemis. Elle est très proche de ses amis, Tesserack, dieu Alsacz, et Badisk, juste déesse impératrice, avec qui elle aime passer du temps à discuter de l'ombre et de tactiques de combat.</p>
+          
+          <h3>Tesserack, dieu Alsacz</h3>
+          <p>Tesserack est un dieu puissant et craint, connu pour sa fascination pour l'Alsace et sa détermination à protéger sa région à tout prix. On dit qu'il possède une armure magique qui lui permet de résister aux attaques ennemies et de se battre avec force, et qu'il aime utiliser ses pouvoirs pour défendre l'Alsace contre tous ceux qui menacent sa sécurité. Tesserack est également un dieu très fier et loyal, qui aime s'entourer de ses amis et de sa famille et qui est prêt à tout pour défendre leurs intérêts. Il est très proche de ses amis, Ninouey, déesse de l'ombre, et Badisk, juste déesse impératrice, avec qui il aime passer du temps à discuter de l'Alsace et de stratégies de défense.</p>
+          
+          <h3>Badisk, juste déesse impératrice</h3>
+          <p>Badisk est une déesse puissante et sage, connue pour son leadership et sa détermination à maintenir l'ordre et la justice dans le monde. On dit qu'elle possède un sceptre magique qui lui permet de contrôler les éléments et de faire respecter ses décisions, et qu'elle aime utiliser ses pouvoirs pour protéger ses sujets et leur offrir une vie meilleure. Badisk est également une déesse très juste et équitable, qui aime écouter les différents points de vue et prendre des décisions en tenant compte de l'intérêt de tous. Elle est très proche de ses amis, Attention, dieu des titres et mention spéciale pour mal lire, et Kangourouille, dieu du Seks, expert pour dévier la conversation pour la ramener à son sujet favori et collectionneur de MST, avec qui elle aime passer du temps à discuter de politique et de stratégie.</p>
+      </div>
+
+      <div id="dieux-patrimoine" class="tab-content">
+        <h2>Dieux du Patrimoine</h2>
+
+          <h3>Orkazh, déesse de la Bretagne</h3>
+          <p>Orkazh est une déesse fière et protectrice, connue pour sa fascination pour la culture bretonne et sa détermination à la préserver et à la promouvoir. On dit qu'elle possède un chapeau magique qui lui permet de voyager à travers le temps et l'espace pour découvrir de nouvelles traditions et de nouvelles histoires, et qu'elle aime utiliser ses pouvoirs pour partager ces connaissances avec les autres. Orkazh est également très protectrice envers sa région et ses habitants, et fait en sorte de veiller sur eux et de les aider à préserver leur mode de vie et leur patrimoine. Elle est très proche de ses amis, FMB, dieu de la gastronomie, et Éloïse, déesse des LGBTQIA+ et grande prêtresse des blindtests, avec qui elle aime passer du temps à découvrir de nouvelles recettes et de nouvelles traditions.</p>
+
+          <h3>FMB, dieu de la gastronomie</h3>
+          <p>FMB est un dieu gourmand et créatif, connu pour sa fascination pour la nourriture et sa détermination à la préparer et à la déguster. On dit qu'il possède une baguette magique qui lui permet de créer de délicieux plats à partir de n'importe quels ingrédients, et qu'il aime utiliser ses pouvoirs pour partager sa passion pour la cuisine avec les autres. FMB est également très intéressé par les différentes cuisines du monde, et passe de nombreuses heures à étudier les recettes et les techniques culinaires de différentes cultures. Il est très proche de ses amis, Orkazh, déesse de la Bretagne, et Éloïse, déesse des LGBTQIA+ et grande prêtresse des blindtests, avec qui il aime passer du temps à préparer de bons petits plats et à en découvrir de nouveaux.</p>
+
+          <h3>Éloïse, déesse des LGBTQIA+ et grande prêtresse des blindtests</h3>
+          <p>Éloïse est une déesse passionnée et inclusive, connue pour sa défense des droits des personnes LGBTQIA+ et pour son amour de la musique et de la culture. On dit qu'elle possède une guitare magique qui lui permet de jouer n'importe quelle chanson à la perfection, et qu'elle aime utiliser ses pouvoirs pour promouvoir l'acceptation et l'égalité. Éloïse est également la grande prêtresse des blindtests, un jeu où les participants doivent deviner le titre et l'artiste d'une chanson en écoutant un extrait. Elle adore ce jeu et passe de nombreuses heures à préparer de nouvelles playlists et à organiser des parties pour ses amis. Elle est très proche de ses amis, Orkazh, déesse de la Bretagne, et FMB, dieu de la gastronomie, avec qui elle aime passer du temps à écouter de la musique et à découvrir de nouveaux artistes.</p>
+
+          <h3>Ambérial, dieu du vroom et messager des dieux</h3>
+          <p>Ambérial est un dieu rapide et agile, connu pour sa fascination pour les voitures et sa détermination à les conduire au maximum de leur potentiel. On dit qu'il possède une clé magique qui lui permet de déverrouiller tous les secrets des mécanismes automobiles, et qu'il aime utiliser ses pouvoirs pour créer de nouvelles performances et de nouvelles expériences de conduite. Ambérial est également le messager des dieux, chargé de transmettre les messages et les instructions des différents dieux entre eux. Il adore ce rôle et passe de nombreuses heures à voyager à travers le monde pour remplir sa mission. Il est très proche de ses amis, Yoann, Deutsch Gott (on ne comprend pas ce qu'il dit), et Fabric, dieu de la rhinoplastie, avec qui il aime passer du temps à discuter de mécanique et de découvertes culturelles.</p>
+
+          <h3>Yoann, Deutsch Gott (on ne comprend pas ce qu'il dit)</h3>
+          <p>Yoann est un dieu mystérieux et insaisissable, connu pour sa fascination pour la langue allemande et sa détermination à la parler parfaitement. On dit qu'il possède un dictionnaire magique qui lui permet de comprendre tous les mots et les expressions de cette langue, même les plus obscurs, et qu'il aime utiliser ses pouvoirs pour enseigner et partager sa connaissance avec les autres. Malheureusement, Yoann parle allemand avec un accent si prononcé qu'il est souvent difficile de le comprendre, d'où son titre de "Deutsch Gott" (Gott signifiant "dieu" en allemand). Cela n'empêche pas Yoann de poursuivre sa quête de maîtrise de cette langue, et il passe de nombreuses heures à étudier les grammaires et les vocabulaires allemands. Il est très proche de ses amis, Ambérial, dieu du vroom et messager des dieux, et Fabric, dieu de la rhinoplastie, avec qui il aime passer du temps à discuter de la culture allemande et à améliorer son accent.</p>
+
+          <h3>Fabric, dieu de la rhinoplastie</h3>
+          <p>Fabric est un dieu talentueux et créatif, connu pour sa fascination pour la chirurgie esthétique et sa détermination à devenir le meilleur chirurgien possible. On raconte qu'il passe de nombreuses heures à étudier la chirurgie et à s'entraîner sur des modèles, et qu'il est un expert en matière de rhinoplastie. Fabric est également très apprécié par ses amis pour sa détermination et sa capacité à aider les autres à atteindre leur plein potentiel. Malgré sa réputation de dieu de la rhinoplastie, Fabric est en réalité très polyvalent et aime s'impliquer dans de nombreuses activités. Il est également le gardien du nez sacré, une organisation dédiée à la protection et à la préservation de la beauté des nez. Fabric est très proche de ses amis, PastèqueHachée, dieu de la pâtisserie, et Tesserack, dieu Alsacz, avec qui il aime passer du temps à discuter de chirurgie et de beauté.</p>
+    </div>
+    <div id="dieux-hornyness" class="tab-content">
+        <h2>Dieux de la Hornyness</h2>
+
+          <h3>Attention, dieu des titres et mention spéciale pour mal lire</h3>
+          <p>Attention est un dieu facilement distrait, connu pour sa tendance à ne pas prêter attention aux détails et à manquer de concentration. On raconte qu'il a un don pour titrer les choses de manière originale et amusante, mais qu'il a également tendance à mal lire les choses et à en tirer des conclusions erronées. Attention est également très apprécié par ses amis pour son sens de l'humour et sa bonne humeur contagieuse. Malgré sa réputation de distrait, Attention est en réalité très intelligent et a un esprit vif et curieux. Il aime passer du temps avec ses amis, Kangourouille, dieu du Seks, expert pour dévier la conversation pour la ramener à son sujet favori et collectionneur de MST, et Billy, dieu de la danse et du soulevage, à discuter de tout et de rien et à rire de ses blagues stupides.</p>
+
+          <h3>Kangourouille, dieu du Seks, expert pour dévier la conversation pour la ramener à son sujet favori et collectionneur de MST</h3>
+          <p>Kangourouille est un dieu obsédé par le sexe et les relations intimes, connu pour sa tendance à dévier la conversation pour la ramener à ces sujets. On raconte qu'il est un expert pour séduire et charmer les gens, et qu'il a une collection impressionnante de maladies sexuellement transmissibles. Kangourouille est également très apprécié par ses amis pour son sens de l'humour et sa bonne humeur contagieuse. Malgré sa réputation de pervers, Kangourouille est en réalité très attentionné et généreux, et aime prendre soin de ses amis et de ceux qu'il aime. Il est très proche de ses amis, Attention, dieu des titres et mention spéciale pour mal lire, et Billy, dieu de la danse et du soulevage, avec qui il aime passer du temps à s'amuser et à rire.</p>
+
+          <h3>Billy, dieu de la danse et dieu du soulevage</h3>
+          <p>Billy est un dieu énergique et grâcieux, connu pour sa passion pour la danse et sa détermination à se dépasser physiquement. On dit qu'il possède une paire de chaussures magiques qui lui donnent une agilité et une endurance surhumaines, et qu'il aime utiliser ses pouvoirs pour créer de nouvelles chorégraphies et de nouvelles performances. Billy est également connu sous le titre de "dieu du soulevage" en raison de sa force exceptionnelle, qu'il aime mettre en avant lors de compétitions de musculation et de sports de force. Il passe de nombreuses heures à s'entraîner et à développer ses muscles, et est très fier de ses réalisations athlétiques. Il est très proche de ses amis, Pelle, dieu des fouilles, et Biker, dieu des kinks et dieu de l'humour douteux, avec qui il aime passer du temps à s'entraîner et à discuter de sport et de condition physique.</p>
+
+          <h3>Pelle, dieu des fouilles</h3>
+          <p>Pelle est un dieu curieux et déterminé, connu pour sa fascination pour les fouilles et l'histoire. On raconte qu'il passe de nombreuses heures à creuser et à explorer de vieilles ruines et sites archéologiques, à la recherche de trésors cachés et de secrets oubliés. Pelle est également très apprécié par ses amis pour sa détermination et son sens de l'aventure. Malgré sa réputation de solitaire, Pelle est en réalité très sociable et aime passer du temps avec ses amis. Il est très proche de ses amis, Biker, dieu des kinks et de l'humour douteux, et Mira, déesse du féminisme, avec qui il aime passer du temps à explorer de nouveaux endroits et à découvrir de nouvelles choses.</p>
+
+          <h3>Biker, dieu des kinks et de l'humour douteux</h3>
+          <p>Biker est un dieu excentrique et provocateur, connu pour sa fascination pour les kinks et l'humour douteux. On raconte qu'il a un sens de l'humour particulier et qu'il aime taquiner ses amis et les faire rire. Biker est également très apprécié par ses amis pour sa bonne humeur et sa générosité. Malgré sa réputation de bad boy, Biker est en réalité très attentionné et protecteur envers ceux qu'il aime. Il est très proche de ses amis, Pelle, dieu des fouilles, et Mira, déesse du féminisme, avec qui il aime passer du temps à s'amuser et à taquiner.</p>
+
+          <h3>Mira, déesse du féminisme</h3>
+          <p>Mira est une déesse passionnée et engagée, connue pour son activisme et son engagement pour les droits des femmes. On raconte qu'elle passe de nombreuses heures à militer et à sensibiliser les gens aux inégalités et discriminations sexistes. Mira est également très appréciée par ses amis pour sa force de caractère et son intelligence. Malgré sa réputation de féministe radicale, Mira est en réalité très ouverte d'esprit et aime débattre et discuter de manière raisonnée. Elle est très proche de ses amis, Pelle, dieu des fouilles, et Biker, dieu des kinks et de l'humour douteux, avec qui elle aime passer du temps à discuter de politique et de société.</p>
+        </div>
+        <div id="entites" class="tab-content">
+          <h2>Entités mystérieuses</h2>
+
+          <h3>Angle Droit, directrice suprême</h3>
+          <p>Angle Droit est une déesse puissante et respectée, connue pour sa sagesse et son autorité sur toutes les entités angledroitiennes. On dit qu'elle possède un sceptre magique qui lui confère le pouvoir de maintenir l'ordre et l'équilibre dans le monde des dieux, et qu'elle aime utiliser ses pouvoirs pour résoudre les conflits et protéger les faibles. Angle Droit est considérée comme la directrice suprême de tous les dieux et créatures, et elle est chargée de prendre les décisions importantes et de veiller à ce que tout le monde respecte les règles et les traditions. Elle passe de nombreuses heures à discuter avec ses conseillers et ses sujets pour écouter leurs préoccupations et trouver des solutions adaptées. Elle est très proche de ses acolytes, Oliver, le chien, et Wrath, le babysitter général, avec qui elle aime passer du temps à discuter de la politique et de la gestion du royaume des dieux.</p>
+
+          <h3>Oliver, le Chien</h3>
+          <p>Oliver est un animal fidèle et affectueux, connu pour sa dévotion envers sa déesse, Angle Droit, et sa soif de découvertes culinaires. On dit qu'il possède un nez magique qui lui permet de détecter les odeurs les plus subtiles et les plus exotiques, et qu'il aime utiliser ses pouvoirs pour trouver de nouvelles friandises et de nouveaux plats à manger. Malheureusement, Oliver a tendance à manger n'importe quoi, même les choses qui ne se mangent pas, ce qui lui a valu le titre de "gourmand". Il a été stérilisé pour éviter les bébés chiens et a donc du mal à se reproduire. Oliver est très proche de ses amis, Fabric, dieu de la rhinoplastie et gardien du nez sacré, et Wrath, le babysitter général, avec qui il aime passer du temps à jouer et à s'entraîner.</p>
+
+          <h3>L'Axolotl, créature légendraire sujette de la Blague</h3>
+          <p>L'Axolotl est l'une des créatures les plus mystérieuses de l'univers angledroitien. On raconte qu'elle serait née de la Blague elle-même, et qu'elle serait dotée de pouvoirs extraordinaires. Elle serait capable de contrôler le temps et l'espace, et serait capable de se transformer en n'importe quelle forme qu'elle désire. Selon les légendes, l'Axolotl serait également capable de se rendre invisible, ce qui lui permet de se cacher parmi les mortels sans être découverte. Elle serait très intelligente et serait considérée comme une source de sagesse par les autres dieux. On raconte qu'elle aurait enseigné à de nombreux dieux et démons les secrets de l'univers et leur aurait donné de précieux conseils. L'Axolotl est également connue pour ses exploits. On raconte qu'elle aurait une fois sauvé l'univers tout entier de la destruction en utilisant ses pouvoirs pour arrêter une comète géante qui menaçait de s'écraser sur la Terre. Elle aurait également voyage à travers le temps et l'espace pour sauver des civilisations en danger et aider les mortels à résoudre de difficiles énigmes. Elle est très proche de ses amis, Chroma, dieu de l'histoire, et Pleutre, dieu du dessin, dieu pimenté et responsable de la brigade anti-dépréciation, avec qui elle aime passer du temps à s'amuser et à se divertir.</p>
+
+          <h3>Wrath, le babysitter général</h3>
+          <p>Wrath est un être puissant et protecteur, connu pour sa dévotion envers les jeunes dieux et créatures de l'univers angledroitien. On dit qu'il possède une force et une endurance surhumaines, et qu'il est capable de protéger ses protégés contre les dangers les plus redoutables. Wrath est également très sage et bienveillant, et il aime prendre le temps d'enseigner et de guider ses protégés dans leur vie et dans leurs aventures. Il est très proche de ses amis, Oliver, le chien, et Fabric, dieu de la rhinoplastie et gardien du nez sacré, avec qui il aime passer du temps à s'entraîner et à s'occuper de ses charges. Wrath est considéré comme un héros par beaucoup de dieux et de créatures, et il est admiré pour sa bravoure et sa loyauté.</p>
+        </div>
+  </body>
+  <script>
+    function changeTab(tabId) {
+      // Désactive tous les onglets et boutons
+      var tabContents = document.getElementsByClassName("tab-content");
+      for (var i = 0; i < tabContents.length; i++) {
+        tabContents[i].classList.remove("active");
+      }
+      var tabButtons = document.getElementsByClassName("tab-button");
+      for (var i = 0; i < tabButtons.length; i++) {
+        tabButtons[i].classList.remove("active");
+      }
+
+      // Active l'onglet et le bouton sélectionné
+      document.getElementById(tabId).classList.add("active");
+      document.getElementById(tabId + "-button").classList.add("active");
+    }
+  </script>
+</html>
